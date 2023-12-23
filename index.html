@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Devchallenges</title>
+  <style>
+       .hamburger > .material-icons{
+        position: relative;
+        top:0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 48px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      color:white;
+      
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+       }
+   
+    .material-icons {
+      position: relative;
+      top:17px;
+      left: 11px;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 48px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      color:white;
+      width: 24px;
+      height: 24px;
+      
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav>
+
+      <button id="btn">This Interior</button>
+      <ul>
+        <li> <a href="#">Home</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamMatId">
+          <span class="material-icons" >  menu   </span>
+      </div>
+
+    </nav>
+
+
+    <div class="text">
+      <h2>Modern interior</h2>
+      <p>
+        A full-Service residential & commercial interior design and staging company offering
+        professional organizing & eco-services.
+      </p>
+      <span class="readmore">Read more </span>
+    
+      <span class="material-icons">
+        arrow_right_alt
+        </span>
+    </div>
+
+    <div class="image">
+      <img src="photo1.png" alt="">
+    </div>
+
+    <div class="interiornote">
+      <img src="photo2.png" alt="">
+      <span class="name">Aliza Webber</span>
+      <span class="profession">Interior designer</span>
+      <p>
+        Designed in 2020 by <br>
+        Aliza Webber
+      </p>
+    </div>
+
+    <div class="writernote">
+      <p> created by <a href="https://devchallenges.io/" target="_blank" class="username">rajendran-</a>
+        devChallenges.io</p>
+    </div>
+  </div>
+  
+  <script>
+
+    let hamburger =  document.querySelector(".hamburger");
+    hamburger.addEventListener('click',changeSymbol);
+
+    let container =  document.querySelector(".container");
+    let nav =  document.querySelector("nav");
+    let ul  =  document.querySelector("ul");
+    let txt =  document.querySelector(".text");
+    let img =  document.querySelector(".image");
+    let intrnote =  document.querySelector(".interiornote");
+    let wnote = document.querySelector(".writernote");
+    
+    function changeSymbol(){
+      let hamMatId =  document.getElementById("hamMatId");      
+      hamMatId.style.left="325px";
+      hamMatId.innerHTML='<span class="material-icons">close</span>';
+
+      let btn =  document.getElementById("btn");
+      btn.style.display="none"  ;
+      txt.style.display = "none";
+      img.style.display = "none";
+      wnote.style.display = "none"; 
+      intrnote.style.display = "none";
+     
+      ul.style.display = "block";
+      ul.style.top = "198px";
+      ul.style.left = "159px";
+      ul.style.right = "159px";
+
+      hamburger.style.left = "0px";
+      hamburger.style.marginRight = "12px";
+    }
+
+  </script>
+
+</body>
+
+</html>

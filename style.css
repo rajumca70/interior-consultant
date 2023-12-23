@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Montserrat:wght@100;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Montserrat:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat:wght@100;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  margin: 0;
+}
+body {
+  width: 1440px;
+  height: 1080px;
+  background: #181719;
+}
+.container {
+  width: 1440px;
+  height: 1080px;
+  background: #181719;
+  border-radius: 20px;
+}
+
+nav {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+button {
+  color: #fff;
+  background: #181719;
+  border: 1px solid #fff;
+  font-family: Crimson Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-transform: uppercase;
+  position: absolute;
+  width: 102px;
+  height: 32px;
+  top: 50px;
+  left: 77px;
+  bottom: 1006px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 30px;
+  top: 46px;
+  left: 827px;
+  right: 76px;
+}
+li {
+  list-style: none;
+  display: block;
+  margin-right: 86px;
+  height: 22px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+li:first-child,
+ul li :hover {
+  font-weight: 700;
+  border-bottom: 3px solid white;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  width: 40px;
+  border-bottom: 5px solid #fff;
+}
+.hamburger {
+  display: none;
+  height: 38px;
+  width: 38px;
+  position: relative;
+  top: 16px;
+  right: 8px;
+}
+.text {
+  position: absolute;
+  top: 381px;
+  left: 77px;
+  bottom: 638px;
+  width: 450px;
+  height: 360px;
+}
+.text > h2 {
+  color: #fff;
+  font-family: Lora;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.text > p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+}
+.text > .readmore {
+  color: #fff;
+  font-family: Montserrat;
+  margin-top: 48px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text > img {
+  background: #fff;
+  width: 70px;
+  height: 30px;
+  position: relative;
+  margin-top: 52px;
+  margin-bottom: 0;
+}
+.image {
+  position: absolute;
+  top: 221px;
+  left: 574px;
+  right: 44.06px;
+  bottom: 271.81px;
+  width: 821.11px;
+  height: 586.53px;
+}
+.image > img {
+  width: 821.114px;
+  height: 586.531px;
+  padding-top: 24px;
+  padding-right: 33px;
+  padding-bottom: 8.2px;
+  padding-left: 52px;
+}
+.interiornote {
+  position: absolute;
+  top: 722px;
+  left: 921px;
+  width: 410px;
+  height: 189px;
+  border: 1px solid lightblue;
+  background: #181719;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.interiornote > img {
+  display: inline-block;
+  width: 85px;
+  height: 72px;
+  margin-top: 10px;
+  margin-left: 14px;
+  border-radius: 50%;
+  padding-top: 8px;
+  padding-right: 18px;
+  padding-bottom: 14px;
+  padding-left: 17px;
+}
+.interiornote > .name {
+  position: absolute;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 23px;
+  width: 105px;
+  height: 17px;
+}
+
+.interiornote > .profession {
+  position: absolute;
+  color: var(--Gray-3, #828282);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-block;
+  margin-top: 48px;
+  margin-bottom: 30px;
+  width: 136px;
+  height: 15px;
+}
+.interiornote > p {
+  width: 287px;
+  height: 62px;
+  margin-top: 30px;
+  color: #fff;
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.writernote {
+  position: absolute;
+  top: 1039px;
+  left: 577px;
+  right: 576px;
+  bottom: 24px;
+}
+.writernote p {
+  width: 287px;
+  height: 17px;
+  color: #a9a9a9;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.username {
+  color: #a9a9a9;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    height: 776px;
+    background: #181719;
+  }
+  .container {
+    width: 375px;
+    height: 776px;
+    background: #181719;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    width: 373px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    width: 103px;
+    height: 31px;
+    position: absolute;
+    top: 19px;
+    left: 12px;
+    bottom: 726px;
+  }
+  ul {
+    height: 230px;
+  }
+  ul li {
+    width: 40px;
+    margin-top: 32px;
+  }
+  li:last-child {
+    width: 135px;
+  }
+
+  ul li:first-child,
+  ul li:hover {
+    width: 60px;
+  }
+  a:hover {
+    border-bottom: 5px solid #fff;
+  }
+  ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    left: 326px;
+    height: 40px;
+    width: 44px;
+  }
+
+  .text {
+    width: 370px;
+    height: 218px;
+    top: 88px;
+    left: 12px;
+  }
+  .text > h2 {
+    color: #fff;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .text > p {
+    width: 250px;
+    height: 85px;
+    margin-top: 25px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .text > .readmore {
+    width: 80px;
+    height: 17px;
+    margin-top: 25px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .image {
+    position: absolute;
+    width: 391.06px;
+    height: 279.34px;
+    top: 311.57px;
+    left: 12.77px;
+    right: 3.69 px;
+    bottom: 184.78px;
+    margin-top: 67.57px;
+  }
+  .image > img {
+    width: 360.06px;
+    height: 279.338px;
+    padding-top: 11px;
+    padding-right: 16px;
+    padding-bottom: 3.9px;
+    padding-left: 25px;
+  }
+  .interiornote {
+    top: 536px;
+    left: 52px;
+    right: 23px;
+    width: 300px;
+    height: 138px;
+  }
+  .interiornote > img {
+    display: inline-block;
+    width: 62.195px;
+    height: 52.683px;
+    border-radius: 50%;
+  }
+  .interiornote > .name {
+    position: absolute;
+    font-size: 12px;
+    margin-top: 16.83px;
+    width: 133.027px;
+    height: 12.439px;
+  }
+
+  .interiornote > .profession {
+    position: absolute;
+    font-size: 10px;
+    width: 142.829px;
+    height: 10.976px;
+    margin-top: 30px;
+  }
+
+  .interiornote > p {
+    width: 210px;
+    height: 45px;
+    margin-top: 21.9px;
+    margin-left: 19px;
+    margin-bottom: 25px;
+    margin-right: 71px;
+    color: #fff;
+    font-family: Lora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .writernote {
+    position: absolute;
+    top: 735px;
+    left: 44px;
+    right: 44px;
+    bottom: 24px;
+  }
+}
